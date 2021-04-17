@@ -1,0 +1,198 @@
+body{
+    background: rgb(223, 223, 223);
+    color: white;
+}
+
+.container {
+    background-color: rgb(29, 139, 146);
+    margin: 0 auto;
+    width: 20%;
+    border-left: solid 4px rgb(23, 126, 133);
+    border-right: solid 4px rgb(23, 126, 133);
+    border-bottom: solid 8px rgb(23, 126, 133);
+    border-radius: 10px;
+    min-width: 320px;
+}
+
+h1 {
+    padding-left: 15%;
+    padding-top: 5%;
+    font-style: italic;
+}
+
+.line {
+    width: 98%;
+    margin-left: 1%;
+    background: rgb(48, 199, 209);
+    height: 2px;
+}
+
+.sk1234 {
+    background:rgb(22, 118, 124);
+    border: solid 3px rgb(20, 109, 116);
+    border-radius: 7px;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 1%;
+    margin-right: 1%;
+    height: 55px;
+    box-sizing: border-box;
+    padding-top: 3%;
+    font-size: 22px;
+
+
+}
+
+.numbers{
+    display: grid;
+    min-height: 300px;
+    grid-gap: 6px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat (5, 1fr);
+    grid-template-areas: "AC AC DEL Percent"
+    "num1 num2 num3 smulti"
+    "num4 num5 num6 splus"
+    "num7 num8 num9 sminus"
+    "dott num0 sequal sequal";
+    margin-left: 1%;
+    margin-right: 1%;
+}
+
+.text {
+    position:relative;
+    top:41%;
+    font-size: 18px;
+}
+
+.AC {
+    text-align: center;
+    grid-area: AC;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.DEL {
+    text-align: center;
+    grid-area: DEL;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.Percent {
+    text-align: center;
+    grid-area: Percent;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num1{
+    text-align: center;
+    grid-area: num1; 
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num2{
+    text-align: center;
+    grid-area: num2;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num3{
+    text-align: center;
+    grid-area: num3;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.smulti{
+    text-align: center;
+    grid-area: smulti;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num4{
+    text-align: center;
+    grid-area: num4;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num5{
+    text-align: center;
+    grid-area: num5;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num6{
+    text-align: center;
+    grid-area: num6;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.splus{
+    text-align: center;
+    grid-area: splus;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num7{
+    text-align: center;
+    grid-area: num7;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num8{
+    text-align: center;
+    grid-area: num8;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num9{
+    text-align: center;
+    grid-area: num9;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.sminus{
+    text-align: center;
+    grid-area: sminus;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.dot{
+    text-align: center;
+    grid-area: dott;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.num0{
+    text-align: center;
+    grid-area: num0;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+.sequal{
+    text-align: center;
+    grid-area: sequal;
+    border-radius: 7px;
+    background: rgb(48, 199, 209);
+}
+
+@media all and (max-width: 1680px) {
+    h1 {
+        font-size: 28px;
+    }
+}

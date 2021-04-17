@@ -1,0 +1,109 @@
+body {
+    width: 100%;
+    margin: auto;
+
+}
+
+.sky {
+    height: 400px;
+    width: 100%;
+    background-color: skyblue;
+}
+
+.grass, .sky, .road {
+    position: relative;
+}
+.grass {
+    height: 300px;
+    width: 100%;
+    background: green; 
+}
+
+.road {
+    height: 300px;
+    width: 100%;
+    background: rgb(107, 107, 107); 
+    border-top: 6px solid grey;
+    border-bottom: 5px solid grey;
+}
+
+.line {
+    border: 5px dashed rgb(216, 215, 215);
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+}
+
+.cloud {
+    position: absolute;
+    z-index: 1;
+    top: 12%;
+    left: 10%;
+}
+
+.cloud:nth-child(1) {
+    width: 250px;
+    top: 18%;
+    opacity: 0.4;
+    animation: vejas 80s linear infinite;
+}
+
+.cloud:nth-child(2) {
+    width: 350px;
+    top: 5%;
+    opacity: 0.8;
+    animation: vejas 80s linear infinite;
+}
+
+.cloud:nth-child(3) {
+    width: 150px;
+    top: 25%;
+    opacity: 0.2;
+    animation: vejas 60s linear infinite;
+    animation-delay: 3s;
+}
+
+.mario {
+    position: absolute;
+    z-index: 1;
+    top: 70%;
+    left: 1%;
+    animation-name: drive;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in; 
+}
+
+
+.luigi {
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 1%;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+}
+
+@keyframes drive {
+    from {
+        transform: translateX(-200px);
+    }
+    to {
+        transform: translateX(1900px)
+    }
+}
+
+@keyframes vejas {
+    from {
+        left: -400px;
+    }
+    to {
+        left: 100%;
+    }
+}

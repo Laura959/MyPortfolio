@@ -1,0 +1,199 @@
+body {
+    background:rgb(197, 243, 255);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Alfa Slab One', cursive;
+}
+
+h2:before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin: 0 0.3vh 0.6vh 0;
+}
+
+h2:after {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 2px;
+    background: #000;
+    margin: 0 0 0.6vh 0.1vh;
+}
+span {
+    background:  rgb(197, 243, 255);
+}
+
+h2 {
+    position: relative;
+    font-family: 'Lato', sans-serif;
+}
+
+.bun {
+    margin-top: 4%;
+    background-color: rgb(250, 196, 18);
+    height: 85px;
+    width: 350px;
+    border-radius: 150px 150px 20px 20px;
+    margin-left: calc(50% - 175px);
+    position: relative;
+    border-bottom: 8px solid  rgb(202, 159, 16);
+    
+}
+
+.one, .two, .three, .four, .five {
+    background-color: rgb(253, 215, 89);
+    height: 8px;
+    width: 26px;
+    border-radius: 60%;
+    position: absolute;
+}
+
+.one {
+    left: calc(50% - 13px);
+    top: 25%; 
+}
+
+.two {
+    left: 25%;
+    top: 25%;
+}
+
+.three {
+    right: 25%;
+    top: 25%;
+}
+
+.four {
+    left: 35%;
+    bottom: 30%;
+}
+
+.five {
+    right: 35%;
+    bottom: 30%;
+}
+
+.salad {
+    margin-top: 0.2%;
+    background-color: rgb(98, 195, 68);
+    height: 12px;
+    width: 370px;
+    border-radius:8px 8px 0px 0px;
+    margin-left: calc(50% - 185px);
+    position: relative;
+    border-bottom: 4px solid rgb(85, 172, 58);
+}
+
+.cheese1 {
+    margin-top: 0.2%;
+    background-color: rgb(250, 246, 3);
+    height: 20px;
+    width: 374px;
+    border-radius:9px;
+    margin-left: calc(50% - 187px);
+    position: relative;
+    border-bottom: 4px solid rgb(211, 208, 33);
+}
+
+.tomato1 {
+    margin-top: 0.15%;
+    margin-right: 0.06%;
+    background-color: rgb(218, 59, 53);
+    height: 27px;
+    width: 160px;
+    border-radius:9px;
+    display: inline-block;
+    border-bottom: 9px solid  rgb(202, 11, 5);
+}
+
+.tomato2 {
+    margin-top: 0.15%;
+    margin-left: 0.06%;
+    background-color: rgb(218, 59, 53);
+    height: 27px;
+    width: 160px;
+    border-radius:9px;
+    border-bottom: 9px solid  rgb(202, 11, 5);
+    display: inline-block;
+}
+
+.cheese2 {
+    background-color: rgb(250, 246, 3);
+    height: 20px;
+    width: 374px;
+    border-radius:9px;
+    margin-left: calc(50% - 187px);
+    position: relative;
+    border-bottom: 4px solid rgb(211, 208, 33);
+}
+
+.ham {
+    margin-top: 0.1%;
+    background-color: rgb(95, 66, 16);
+    height: 50px;
+    width: 374px;
+    border-radius:25px;
+    margin-left: calc(50% - 187px);
+    position: relative;
+    border-bottom: 9px solid rgb(71, 50, 13); 
+}
+
+.cheese1 {
+    margin-top: 0.2%;
+    background-color: rgb(250, 246, 3);
+    height: 20px;
+    width: 374px;
+    border-radius:9px;
+    margin-left: calc(50% - 187px);
+    position: relative;
+    border-bottom: 4px solid rgb(211, 208, 33);
+}
+
+.salad2 {
+    margin-top: 0.2%;
+    background-color: rgb(98, 195, 68);
+    height: 12px;
+    width: 370px;
+    border-radius:0px 0px 8px 8px;
+    margin-left: calc(50% - 185px);
+    position: relative;
+    border-top: 4px solid rgb(85, 172, 58);
+}
+
+.bun1 {
+    margin-top: 0.2%;
+    background-color: rgb(250, 196, 18);
+    height: 85px;
+    width: 350px;
+    border-radius: 20px 20px 150px 150px;
+    margin-left: calc(50% - 175px);
+    position: relative;
+    border-top: 8px solid  rgb(202, 159, 16);
+    
+}
+
+.tag {
+    background-color: rgb(224, 68, 6);
+    height: 60px;
+    width: 135px;
+    border-radius: 9px;
+    transform: rotate(-25deg);
+    color:  rgb(197, 243, 255);
+    font-size: 30px;
+    margin-left: 53%;
+    margin-top: -60px;
+    text-align: center;
+    line-height: 60px; 
+    font-family: 'Alfa Slab One', cursive;
+}
+
+
+
+
+
+

@@ -1,0 +1,4 @@
+Pomidoru pozicionavimas:
+dislay: inline-block;
+
+Pozicionavimo galima naudoti daug maziau. Tik pvz etikete, sezamai ir pan.

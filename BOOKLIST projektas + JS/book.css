@@ -1,0 +1,338 @@
+
+body{
+    margin: auto;
+    width: 70%;
+    font-family: 'Libre Franklin', sans-serif;
+    min-width: 480px;
+
+}
+
+h1 {
+    text-align: center;
+    margin-top: 5%;
+    font-weight: 400;
+}
+
+form {
+    margin-left: 23%;
+}
+
+label {
+    color: #566573;
+}
+
+input {
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 70%;
+    padding-bottom: 1.8%;
+    border: 1.2px solid #d9dcdf;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+  input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+h4, p {
+    display: inline-block;
+    color: #808283;
+    margin-left: 1%;
+    margin-right: 11.45%;
+    margin-bottom: 1%;
+    margin-top: -10px;
+    font-size: 15px;
+}
+.book {
+    color: #2ECC71;
+    font-weight: 100;
+}
+
+.rating {
+    float: left;
+    height: 40px;
+}
+/*  ">" tai reiskia, kad paselektins elementus esancius input elemento "rating" klaseje, bet ne gilesniuose jos sluoksniuose */
+.rating:not(:checked) > input {
+    position:absolute;
+    top:-9999px;
+}
+.rating:not(:checked) > label {
+    float:right;
+    width:0.8em;
+    /* Overflow property controls what happens to content that is too big to fit into an area. hidden neleidzia iseiti is ribu */
+    overflow:hidden; 
+    white-space:nowrap;
+    cursor:pointer;
+    font-size:22px;
+    color:#ccc;
+}
+.rating:not(:checked) > label:before {
+    content: '★ ';
+}
+/* "~" parenka visus elementus, kurie yra giminingi sibling tam tikram elementui  */
+.rating > input:checked ~ label {
+    color: #ffc700;    
+}
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+    color: #deb217;  
+}
+/* "+" parenka visus elementus, kurie yra greta esamo elemento broliai ir seserys. Giminingi elemetai turi tur4ti t1 pat5 pagrindin5 elementa. */
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+    color: #c59b08;
+}
+
+#submit {
+    position:relative;
+    align-items: center;
+    margin-left: -9vh;
+    width: 70.5%;
+    font-family: 'Libre Franklin', sans-serif;
+    padding-top: 0.8%;
+    padding-bottom: 0.8%;
+    font-size: 17px;
+    color: white;
+    background-color: #2ECC71;
+    border: #2ECC71;
+}
+
+.table {
+    margin-left: 22.5%;
+}
+
+.line1 {
+    width: 70.5%;
+    height: 1.5px;
+    background-color: #d9dcdf;
+    margin-top: 5%;
+}
+
+.line2 {
+    width: 71%;
+    height: 1.5px;
+    background-color: #bbbbbb;
+    margin-top: 1%;
+}
+
+.hline {
+    width: 3px;
+    height: 35px;
+    background-color: #d9dcdf;
+    display: inline-block;
+    margin: 1% 0% -1.4% 0%;
+    box-sizing: border-box;
+}
+
+.stars {
+    float: none;
+    margin: 1% 1% -1.5% -12%;
+    display: inline-block;
+    font-size: 20px;
+}
+
+
+.btn {
+    background-color:#f0f3f5; 
+    border: none; 
+    padding: 8px 12px; 
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+    white-space: nowrap; 
+}
+
+td {
+    padding-right: 3%;
+    font-size: 14px;
+    width: 4%;
+}
+
+#rtitle {
+    width: 3.5%;
+    padding-left: 1%;
+}
+
+.greybg {
+    background-color: #f0f3f5;
+    z-index: -1000;
+    margin-right: 29%;
+}
+
+.yellow {
+    color: #deb217;
+    font-size: 22px;
+    padding-left: 10%;
+}
+
+#tableHeader{
+    display: none;
+}
+
+.radioStars {
+    display: flex;
+    flex-direction: row;
+    margin-left: -0.8%;
+
+}
+
+.column {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-top: 6%;
+}
+
+.labelP {
+    font-size: 12px;
+    margin-bottom: 2%;
+    text-align: center;
+    padding-bottom: 20%;
+}
+
+.form-popup {
+    display: none;
+    position: relative;
+    bottom: 0;
+    border: 3px solid #c3c5c7;
+    border-radius: 20px;
+    z-index: 9;
+    background-color: white;
+    box-shadow: 0 5px 25px rgba(0,0,0,.30);
+  }
+
+  #myForm {
+      margin-bottom: 20%;
+      margin-top: -45%;
+      margin-left: 25%;
+      width: 50%;
+  }
+
+  .form-container {
+      background-color: white;
+  }
+
+.popup-title {
+    margin-left: -22%;
+    color:rgb(63, 63, 63);
+    font-weight: bold;
+}
+
+#submitpop {
+    cursor: pointer;
+}
+
+.btn-cancel {
+    margin-bottom: 10%;
+    margin-top: 1%;
+    padding: 1%;
+    cursor: pointer;
+    border: #c3c5c7;
+}
+
+#container.active {
+    filter: blur(20px);
+}
+
+@media all and (max-width: 700px) {
+body {
+    width: 95%;
+}
+
+h4 {
+    font-size: 14px;
+    margin-right: 5%;
+}
+
+table {
+    white-space: normal;
+}
+
+td {
+    width: 2%;
+    word-wrap:break-word;
+}
+
+.hline {
+    width: 0;
+}
+
+h1, .popup-title {
+    font-size: 20px;
+}
+
+.form-popup{
+    font-size: 13px;
+}
+
+.fa-trash-alt, .fa-edit {
+   width: 2px;
+   font-size: 12px;
+}
+
+.yellow {
+    font-size: 20px;
+}
+
+.lineNumber {
+    display: none;
+}
+
+#ratingstar {
+    font-size: 12px;
+    margin-left: -100vh;
+}
+
+#rtitle {
+    width: 2%;
+}
+}
+
+@media all and (min-width: 701px) and (max-width: 1024px) {
+    h4 {
+        font-size: 16px;
+        margin-right: 5%;
+    }
+
+    table {
+        white-space: normal;
+    }
+
+    td {
+        word-wrap:break-word;
+    }
+    
+    .hline {
+        width: 0;
+    }
+
+}
+
+@media all and (min-width: 1025px) and (max-width: 1400px) {
+    h4 {
+        font-size: 16px;
+        margin-right: 9%;
+    }
+
+    table {
+        white-space: normal;
+    }
+    
+    .hline {
+        width: 0;
+    }
+
+}
+
+

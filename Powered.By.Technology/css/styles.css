@@ -1,0 +1,201 @@
+body {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(229, 6%, 66%);
+    background-color: hsl(210, 17%, 98%);
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+}
+
+h4 {
+    margin-bottom: 4%;
+    width: 100%;
+    margin-left: 1%;
+}
+
+h2 {
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 2%;
+    margin-bottom: 8%;
+
+}
+
+h1, h3, h2 {
+    color: hsl(234, 12%, 34%);
+    font-weight: 600;
+}
+
+.slim {
+    font-weight: 200;
+    font-size: 38px;
+    margin-bottom: 0;
+}
+
+.Powered {
+    margin-top: 0;
+    font-size: 28px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.Supervisor, .Calculator, .column {
+    width: calc(100%/3)-30px);
+    min-width: 300px;
+    margin: 15px;
+} 
+
+.Supervisor {
+    border-top: 4px solid hsl(180, 62%, 55%);
+    margin-right:15px;
+}
+
+
+.Team {
+    border-top: 4px solid hsl(0, 78%, 62%);
+    margin-bottom: 30px;
+}
+
+.Karma {
+    border-top: 4px solid hsl(34, 97%, 64%);
+}
+
+.Calculator {
+    border-top: 4px solid hsl(212, 86%, 64%);
+}
+
+.img {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.box {
+    border-radius: 5px 5px 0 0; 
+    flex-wrap: wrap;
+    -webkit-box-shadow: 3px 6px 10px -1px rgba(77,90,91,0.39); 
+    box-shadow: 3px 6px 10px -1px rgba(77,90,91,0.39);
+    background-color: white;
+    padding: 10px 20px 20px 30px;
+    box-sizing: border-box;
+    text-align: left;
+    width: 100%;
+    min-width: 350px;
+}
+
+@media all and (max-width: 780px) and (min-width:481px) {
+
+    .slim {
+        font-size: 28px;
+    }
+
+    .Powered {
+        font-size: 32px;
+    }
+
+    .g {
+        display: inline-block;
+        position: relative;
+        bottom: 8%;
+        left: 62%;
+    }
+
+    .Karmap {
+        margin-bottom: 16%;
+    }
+
+    .Karma {
+        padding-bottom: 0;
+    }
+
+    h4 {
+        width: 95%;
+        margin-left: 3%;
+    }
+
+    .box {
+        min-width: 235px;
+        max-width: 350px;
+        max-height: 245px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .column {
+        flex-direction: row;
+    }
+
+    .Team {
+        margin-right: 8%;
+        margin-bottom: 3%;
+    }
+
+    .Calculator {
+        margin-top: 0px;
+    }
+}
+
+    @media all and (min-width: 780px) {
+        .box {
+            min-width: 250px;
+            max-width: 350px;
+            
+        }
+        .container {
+            flex-direction: row;
+        }
+
+        .slim {
+            font-size: 30px;
+        }
+
+        .Powered {
+            font-size: 36px;
+        }
+
+        h4 {
+            width: 40%;
+            margin-left: 30%;
+        }
+    }
+
+    
+    @media all and (min-width: 1250px) {
+        .box {
+            min-width: 300px;
+            max-width: 350px;
+            
+        }
+        .container {
+            flex-direction: row;
+        }
+
+        .slim {
+            font-size: 32px;
+        }
+
+        .Powered {
+            font-size: 38px;
+        }
+
+        h4 {
+            width: 40%;
+            margin-left: 30%;
+        }
+    }
